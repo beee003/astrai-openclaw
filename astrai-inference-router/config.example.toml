@@ -1,0 +1,20 @@
+# Astrai Inference Router — OpenClaw skill config
+# Add this to your ~/.openclaw/config.toml under [skills.astrai-inference-router]
+
+[skills.astrai-inference-router]
+# Required: Get a free key at https://as-trai.com
+ASTRAI_API_KEY = "your_key_here"
+
+# Privacy mode: standard | enhanced | max
+# - standard:  Full routing, normal logging
+# - enhanced:  PII stripped, metadata-only logging (default)
+# - max:       Zero retention, EU-only, no prompt logging
+PRIVACY_MODE = "enhanced"
+
+# Region: any | eu | us
+# Set to "eu" for GDPR-compliant European-only routing
+REGION = "any"
+
+# Daily budget cap in USD (0 = unlimited)
+# Prevents runaway agent costs
+DAILY_BUDGET = 10

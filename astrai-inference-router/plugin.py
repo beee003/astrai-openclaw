@@ -94,7 +94,7 @@ class AstraiInferenceRouterPlugin:
 
     def __init__(self) -> None:
         self.api_key = os.getenv("ASTRAI_API_KEY", "")
-        self.privacy_mode = os.getenv("PRIVACY_MODE", "enhanced")
+        self.privacy_mode = os.getenv("PRIVACY_MODE", "standard")
         self.region = os.getenv("REGION", "any")
         self.daily_budget = float(os.getenv("DAILY_BUDGET", "10") or 0)
         self.provider_keys = _collect_provider_keys()

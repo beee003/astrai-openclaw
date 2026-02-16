@@ -24,9 +24,9 @@ GOOGLE_API_KEY = ""
 # ── Privacy & Region ────────────────────────────────────────────
 # Privacy mode: standard | enhanced | max
 # - standard:  Full routing, normal logging
-# - enhanced:  PII stripped, metadata-only logging (default)
-# - max:       Zero retention, EU-only, no prompt logging
-PRIVACY_MODE = "enhanced"
+# - enhanced:  PII stripped, no server-side logging (Pro plan)
+# - max:       Zero retention, EU-only, no prompt logging (Pro plan)
+PRIVACY_MODE = "standard"
 
 # Region: any | eu | us
 # Set to "eu" for GDPR-compliant European-only routing
